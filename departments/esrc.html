@@ -32,12 +32,12 @@
     <section class="relative h-screen">
       <div class="absolute inset-0">
         <img
-          src="images/esrc-hero.jpg"
+          src="/SteerHub/images/esrc2.png"
           alt="ESRC"
           class="w-full h-full object-cover"
         />
         <div
-          class="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-700/60"
+          class="absolute inset-0 bg-gradient-to-r from-green-900/80 to-white-500/60"
         ></div>
       </div>
       <div class="relative container mx-auto px-6 h-full flex items-center">
@@ -58,26 +58,73 @@
       </div>
     </section>
 
+    <head>
+      <!-- Font Awesome CDN -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    </head> 
+
+<section class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-semibold text-green-800 mb-8">SERVICE OFFERED</h2>
+    
+        <section>
+          <!-- Horizontal Scrollable Container -->
+          <div class="relative">
+            <div class="grid grid-cols-3 gap-4 py-4">
+              <!-- Item 1: Locators and Co-Working Spaces -->
+              <!-- Item 1: AI Development, IoT, and Data Science -->
+          <div class="flex flex-col items-center justify-center mb-4">
+            <i class="fas fa-brain text-3xl text-green-800 mb-4"></i> <!-- Brain icon for AI -->
+            <p class="text-lg text-gray-700">Electronic circuit design and simulation</p>
+          </div>
+
+          <!-- Item 2: Research Consultation and Collaboration -->
+          <div class="flex flex-col items-center justify-center mb-4">
+            <i class="fas fa-users-cog text-3xl text-green-800 mb-4"></i> <!-- Users cog icon for collaboration -->
+            <p class="text-lg text-gray-700">PCB Fabrication</p>
+          </div>
+
+          <!-- Item 3: Trainings -->
+          <div class="flex flex-col items-center justify-center mb-4">
+            <i class="fas fa-chalkboard-teacher text-3xl text-green-800 mb-4"></i> <!-- Chalkboard icon for training -->
+            <p class="text-lg text-gray-700">Signals testings and analysis</p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center mb-4">
+            <i class="fas fa-chalkboard-teacher text-3xl text-green-800 mb-4"></i> <!-- Chalkboard icon for training -->
+            <p class="text-lg text-gray-700">Data Acquisition and sensor measurements</p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center mb-4">
+            <i class="fas fa-chalkboard-teacher text-3xl text-green-800 mb-4"></i> <!-- Chalkboard icon for training -->
+            <p class="text-lg text-gray-700">Category 1 and 2 measurements 
+              of electronic circuit boards such as 
+              continuity, functionality and energy 
+              efficiency testing</p>
+          </div>
+            </div>
+          </div>
+        </section>        
+
     <!-- About ESRC -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-gray">
       <div class="container mx-auto px-6">
         <h2
           class="text-4xl font-bold text-center mb-16 text-gray-800"
-          data-aos="fade-up"
-        >
-          About ESRC
+          data-aos="fade-up">
+          ABOUT ESRC
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div data-aos="fade-right">
             <img
-              src="images/esrc-about.jpg"
-              alt="About ESRC"
-              class="w-full rounded-lg shadow-lg"
-            />
+            src="/SteerHub/images/4.png"
+            alt="About CTI"
+            class="w-full rounded-lg shadow-lg"
+          />
           </div>
           <div data-aos="fade-left">
-            <p class="text-lg text-gray-600 leading-relaxed">
-              The **Environmental Science Research Center (ESRC)** is committed
+            <p class="text-lg text-gray-600 leading-relaxed text-left">
+              The Environmental Science Research Center (ESRC) is committed
               to conducting research on environmental challenges,
               sustainability, and climate change. Our team focuses on developing
               innovative solutions to protect the planet and improve quality of
@@ -155,27 +202,38 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-green-200">
       <div class="container mx-auto px-6 text-center">
-        <h2 class="text-4xl font-bold text-gray-800 mb-6" data-aos="fade-up">
-          Get in Touch
-        </h2>
-        <p class="text-lg text-gray-600 mb-8" data-aos="fade-up">
-          Interested in our environmental research? Contact us today!
-        </p>
-        <button
-          class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg transition duration-300"
-        >
+        <h1 class="text-6xl font-bold text-gray-800 mb-3 pt-3">
           Contact Us
-        </button>
+        </h1>
+        <p class="text-lg text-gray-600 mb-8">
+          Interested in joining our startup programs? Reach out today!
+        </p>
+      </div>
+
+      <div class="container mx-auto px-6 flex justify-center items-center gap-10">
+    
+        <div class="flex-shrink-0">
+          <img src="../images/qrcode/qrDTC.png" 
+               alt="Contact Image" 
+               class="max-w-[150px] max-h-[150px] rounded-lg shadow-md">
+        </div>
+    
+        <div class="text-left">
+          <h2 class="text-3xl font-semibold text-gray-800 mb-2" >Get in Touch</h2>
+          <p class="text-lg text-gray-700" >
+            📞 Phone: (043) 425-0139 loc. 2405 <br>
+            ✉️ Email: esrc@g.batstate-u.edu.ph
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
       <div class="container mx-auto px-6 text-center">
-        <p>© 2024 ESRC. All rights reserved.</p>
+        <p>© 2025 ESRC. All rights reserved.</p>
       </div>
     </footer>
 
