@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Likha FabLab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+      <nav class="container mx-auto px-6 py-3">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-4">
+            <img src="../images/BSU_LOGO.png" class="h-12" />
+            <h1 class="text-2xl font-bold text-blue-800">Likha FabLab</h1>
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="#" class="text-gray-600 hover:text-blue-800">Home</a>
+            <a href="#" class="text-gray-600 hover:text-blue-800">Projects</a>
+            <a href="#" class="text-gray-600 hover:text-blue-800">Services</a>
+            <a href="#" class="text-gray-600 hover:text-blue-800">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen">
+      <div class="absolute inset-0">
+        <img
+          src="images/fablab-hero.jpg"
+          alt="Likha FabLab"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-700/60"
+        ></div>
+      </div>
+      <div class="relative container mx-auto px-6 h-full flex items-center">
+        <div class="max-w-2xl text-white" data-aos="fade-up">
+          <h2 class="text-5xl font-bold mb-6">Welcome to Likha FabLab</h2>
+          <p class="text-xl mb-8">
+            A cutting-edge digital fabrication laboratory driving innovation and
+            creativity in research and industry.
+          </p>
+          <button
+            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition duration-300"
+          >
+            Explore Our Work
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Likha FabLab -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-4xl font-bold text-center mb-16 text-gray-800"
+          data-aos="fade-up"
+        >
+          About Likha FabLab
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div data-aos="fade-right">
+            <img
+              src="images/fablab-about.jpg"
+              alt="About FabLab"
+              class="w-full rounded-lg shadow-lg"
+            />
+          </div>
+          <div data-aos="fade-left">
+            <p class="text-lg text-gray-600 leading-relaxed">
+              Likha FabLab is a state-of-the-art fabrication laboratory
+              dedicated to advanced manufacturing and prototyping. Equipped with
+              the latest in 3D printing, CNC machining, laser cutting, and
+              electronics fabrication, the lab empowers researchers, engineers,
+              and entrepreneurs to turn their ideas into reality.
+            </p>
+            <p class="text-lg text-gray-600 leading-relaxed mt-4">
+              Whether you're working on a research project, a startup prototype,
+              or an industrial solution, Likha FabLab provides the tools and
+              expertise needed to innovate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Showcase -->
+    <section class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-4xl font-bold text-center mb-16 text-gray-800"
+          data-aos="fade-up"
+        >
+          Our Projects
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden"
+            data-aos="fade-up"
+          >
+            <img
+              src="images/project1.jpg"
+              alt="Project 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">3D-Printed Prototypes</h3>
+              <p class="text-gray-600">
+                High-precision 3D printing for research and product development.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              src="images/project2.jpg"
+              alt="Project 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Robotics & Automation</h3>
+              <p class="text-gray-600">
+                AI-driven robotic systems for industrial applications.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="images/project3.jpg"
+              alt="Project 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Smart IoT Devices</h3>
+              <p class="text-gray-600">
+                Innovative IoT solutions for smart cities and homes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold text-gray-800 mb-6" data-aos="fade-up">
+          Get in Touch
+        </h2>
+        <p class="text-lg text-gray-600 mb-8" data-aos="fade-up">
+          Interested in working with Likha FabLab? Contact us today!
+        </p>
+        <button
+          class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg transition duration-300"
+        >
+          Contact Us
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-6 text-center">
+        <p>© 2024 Likha FabLab. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

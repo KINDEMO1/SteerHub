@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTI - Center for Technopreneurship and Innovation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-50">
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+      <nav class="container mx-auto px-6 py-3">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-4">
+            <img src="../images/BSU_LOGO.png" class="h-12" />
+            <h1 class="text-2xl font-bold text-blue-800">CTI</h1>
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="#" class="text-gray-600 hover:text-blue-800">Home</a>
+            <a href="#" class="text-gray-600 hover:text-blue-800">Programs</a>
+            <a href="#" class="text-gray-600 hover:text-blue-800">Startups</a>
+            <a href="#" class="text-gray-600 hover:text-blue-800">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="relative h-screen">
+      <div class="absolute inset-0">
+        <img
+          src="images/cti-hero.jpg"
+          alt="CTI"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-700/60"
+        ></div>
+      </div>
+      <div class="relative container mx-auto px-6 h-full flex items-center">
+        <div class="max-w-2xl text-white" data-aos="fade-up">
+          <h2 class="text-5xl font-bold mb-6">
+            Empowering Innovators & Startups
+          </h2>
+          <p class="text-xl mb-8">
+            CTI supports entrepreneurs in transforming ideas into market-ready
+            products.
+          </p>
+          <button
+            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition duration-300"
+          >
+            Explore Our Programs
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-4xl font-bold text-center mb-16 text-gray-800"
+          data-aos="fade-up"
+        >
+          About CTI
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div data-aos="fade-right">
+            <img
+              src="images/cti-about.jpg"
+              alt="About CTI"
+              class="w-full rounded-lg shadow-lg"
+            />
+          </div>
+          <div data-aos="fade-left">
+            <p class="text-lg text-gray-600 leading-relaxed">
+              The Center for Technopreneurship and Innovation (CTI) is a hub for
+              aspiring entrepreneurs and startups. We provide mentorship,
+              funding opportunities, and networking platforms to turn ideas into
+              sustainable businesses.
+            </p>
+            <p class="text-lg text-gray-600 leading-relaxed mt-4">
+              CTI works closely with researchers, students, and industry
+              professionals to drive innovation-driven entrepreneurship.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-4xl font-bold text-center mb-16 text-gray-800"
+          data-aos="fade-up"
+        >
+          Programs & Initiatives
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden"
+            data-aos="fade-up"
+          >
+            <img
+              src="images/startup-mentorship.jpg"
+              alt="Mentorship"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Startup Mentorship</h3>
+              <p class="text-gray-600">
+                Guidance from industry experts to develop viable business
+                models.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              src="images/funding.jpg"
+              alt="Funding"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Funding & Grants</h3>
+              <p class="text-gray-600">
+                Access to financial support for startup growth and product
+                development.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="images/networking.jpg"
+              alt="Networking"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Networking Events</h3>
+              <p class="text-gray-600">
+                Opportunities to connect with investors, partners, and fellow
+                entrepreneurs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold text-gray-800 mb-6" data-aos="fade-up">
+          Get in Touch
+        </h2>
+        <p class="text-lg text-gray-600 mb-8" data-aos="fade-up">
+          Interested in joining our startup programs? Reach out today!
+        </p>
+        <button
+          class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg transition duration-300"
+        >
+          Contact Us
+        </button>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-6 text-center">
+        <p>© 2024 CTI. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
