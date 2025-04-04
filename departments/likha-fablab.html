@@ -13,21 +13,23 @@
       <nav class="container mx-auto px-6 py-3">
         <div class="flex items-center justify-between">
           <div class="flex items-center space-x-4">
-            <img src="../images/BSU_LOGO.png" class="h-12" />
-            <h1 class="text-2xl font-bold text-blue-800">Likha FabLab</h1>
+            <a href="/index.html">
+              <img src="../images/BSU_LOGO.png" class="h-12" alt="BSU Logo" />
+            </a>
+            <h1 onclick="document.getElementById('likha').scrollIntoView({ behavior: 'smooth' })"class="text-2xl font-bold text-blue-800">Likha FabLab</h1>
           </div>
           <div class="hidden md:flex space-x-8">
-            <a href="#" class="text-gray-600 hover:text-blue-800">Home</a>
-            <a href="#" class="text-gray-600 hover:text-blue-800">Projects</a>
-            <a href="#" class="text-gray-600 hover:text-blue-800">Services</a>
-            <a href="#" class="text-gray-600 hover:text-blue-800">Contact</a>
+            <a href="/index.html" class="text-gray-600 hover:text-blue-800">Home</a>
+            <a onclick="document.getElementById('program').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800">Programs</a>
+            <a onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800">Services</a>
+            <a onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800">Contact</a>
           </div>
         </div>
       </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative h-screen">
+    <section id="likha" class="relative h-screen">
       <div class="absolute inset-0">
         <img
           src="/images/likha-fablab.png"
@@ -40,15 +42,11 @@
       </div>
       <div class="relative container mx-auto px-6 h-full flex items-center">
         <div class="max-w-2xl text-white" data-aos="fade-up">
-          <h2 class="text-5xl font-bold mb-6">Manufacturing Research Center</h2>
-          <p class="text-xl mb-8">
-            Labspace for Innovation, Knowledge - Honing and Application (LIKHA) 
-            provides digital fabrication machine service and expertise to its clients.
-          </p>
-          <button
+          <h2 class="text-5xl font-bold mb-6">MANUFACUTRING RESEARCH CENTER (MRC OR LIKHA FABLAB)</h2>
+          <button onclick="document.getElementById('details').scrollIntoView({ behavior: 'smooth' })"
             class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition duration-300"
           >
-            Explore Our Work
+            See More
           </button>
         </div>
       </div>
@@ -60,7 +58,7 @@
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     </head> 
     
-    <section class="py-20 bg-gray-100">
+    <section id="services" class="py-20 bg-gray-100">
       <div class="container mx-auto px-6 text-center">
         <h2 class="text-4xl font-semibold text-blue-500 mb-8">SERVICE OFFERED</h2>
     
@@ -120,7 +118,7 @@
         </section>
 
     <!-- About Likha FabLab -->
-    <section class="py-20 bg-gray">
+    <section id="details" class="py-20 bg-gray">
       <div class="container mx-auto px-6">
         <h2
           class="text-4xl font-bold text-center mb-16 text-gray-800"
@@ -130,20 +128,20 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div data-aos="fade-right">
             <img
-              src="images/fablab-about.jpg"
+              src="/images/about/LIKHA Picture.jpg"
               alt="About FabLab"
               class="w-full rounded-lg shadow-lg"
             />
           </div>
           <div data-aos="fade-left">
-            <p class="text-lg text-gray-600 leading-relaxed text-left">
+            <p class="text-lg text-gray-600 leading-relaxed text-left text-justify font-sans">
               Likha FabLab is a state-of-the-art fabrication laboratory
               dedicated to advanced manufacturing and prototyping. Equipped with
               the latest in 3D printing, CNC machining, laser cutting, and
               electronics fabrication, the lab empowers researchers, engineers,
               and entrepreneurs to turn their ideas into reality.
             </p>
-            <p class="text-lg text-gray-600 leading-relaxed mt-4 text-left">
+            <p class="text-lg text-gray-600 leading-relaxed mt-4 text-left text-justify font-sans">
               Whether you're working on a research project, a startup prototype,
               or an industrial solution, Likha FabLab provides the tools and
               expertise needed to innovate.
@@ -153,13 +151,12 @@
       </div>
     </section>
 
-    <section class="py-20 bg-gray-100">
+    <section id="program" class="py-20 bg-gray-100">
       <div class="container mx-auto px-6">
         <h2
           class="text-4xl font-bold text-center mb-16 text-gray-800"
           data-aos="fade-up"
-        >
-          Our Projects
+        >PROGRAMS AND INITIATIVES
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div
@@ -172,9 +169,9 @@
               class="w-full h-48 object-cover"
             />
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">3D-Printed Prototypes</h3>
-              <p class="text-gray-600">
-                High-precision 3D printing for research and product development.
+              <h3 class="text-xl font-bold mb-2">Trainings, Seminars and Workshops</h3>
+             <p class="text-gray-600">
+                
               </p>
             </div>
           </div>
@@ -184,14 +181,14 @@
             data-aos-delay="100"
           >
             <img
-              src="/images/about/LIKHA Picture.jpg"
+              src="/images/about/automation.jpg"
               alt="Project 2"
               class="w-full h-48 object-cover"
             />
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Robotics & Automation</h3>
+              <h3 class="text-xl font-bold mb-2">Digital Fabrication</h3>
               <p class="text-gray-600">
-                AI-driven robotic systems for industrial applications.
+                
               </p>
             </div>
           </div>
@@ -206,9 +203,9 @@
               class="w-full h-48 object-cover"
             />
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Smart IoT Devices</h3>
+              <h3 class="text-xl font-bold mb-2">Partnership with MSMEs, startups, researchers and industry</h3>
               <p class="text-gray-600">
-                Innovative IoT solutions for smart cities and homes.
+               
               </p>
             </div>
           </div>
@@ -216,7 +213,7 @@
       </div>
     </section>
 
-    <section class="py-20 bg-blue-200">
+    <section id="contact" class="py-20 bg-blue-200">
       <div class="container mx-auto px-6 text-center">
         <h1 class="text-6xl font-bold text-gray-800 mb-3 pt-3">
           Contact Us
@@ -238,7 +235,8 @@
           <h2 class="text-3xl font-semibold text-gray-800 mb-2" >Get in Touch</h2>
           <p class="text-lg text-gray-700" >
             📞 Phone: (043) 425-0139 loc. 2402 <br>
-            ✉️ Email: likhafablab@g.batstate-u.edu.ph
+            ✉️ Email: likhafablab@g.batstate-u.edu.ph <br>
+            📍 Address: 2F STEER Hub Bldg., Batangas State University - <br> TNEU Alangilan Campus, Batangas City, Batangas, Philippines 4200
           </p>
         </div>
       </div>

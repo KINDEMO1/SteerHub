@@ -13,21 +13,23 @@
       <nav class="container mx-auto px-6 py-3">
         <div class="flex items-center justify-between">
           <div class="flex items-center space-x-4">
-            <img src="../images/BSU_LOGO.png" class="h-12" />
-            <h1 class="text-2xl font-bold text-blue-800">GIS</h1>
+            <a href="/index.html">
+              <img src="../images/BSU_LOGO.png" class="h-12" alt="BSU Logo" />
+            </a>
+            <h1 onclick="document.getElementById('gis').scrollIntoView({ behavior: 'smooth' })" class="text-2xl font-bold text-blue-800">GIS</h1>
           </div>
           <div class="hidden md:flex space-x-8">
-            <a href="#" class="text-gray-600 hover:text-blue-800">Home</a>
-            <a href="#" class="text-gray-600 hover:text-blue-800">Services</a>
-            <a href="#" class="text-gray-600 hover:text-blue-800">Research</a>
-            <a href="#" class="text-gray-600 hover:text-blue-800">Contact</a>
+            <a href="/index.html" class="text-gray-600 hover:text-blue-800">Home</a>
+            <a onclick="document.getElementById('program').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800">Programs</a>
+            <a onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800">Services</a>
+            <a onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800">Contact</a>
           </div>
         </div>
       </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative h-screen">
+    <section id="gis" class="relative h-screen">
       <div class="absolute inset-0">
         <img
           src="/images/gis1.png"
@@ -41,15 +43,12 @@
       <div class="relative container mx-auto px-6 h-full flex items-center">
         <div class="max-w-2xl text-white" data-aos="fade-up">
           <h2 class="text-5xl font-bold mb-6">
-            Geographic Information Systems
+            GIS APPLICATIONS DEVELOPMENT CENTER (GADC)
           </h2>
-          <p class="text-xl mb-8">
-            Empowering spatial analysis and data-driven decision making.
-          </p>
-          <button
+          <button onclick="document.getElementById('details').scrollIntoView({ behavior: 'smooth' })"
             class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition duration-300"
           >
-            Explore Our Services
+            See More
           </button>
         </div>
       </div>
@@ -60,10 +59,9 @@
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     </head> 
 
-<section class="py-20 bg-gray-100">
+    <section id="services" class="py-20 bg-gray-100">
       <div class="container mx-auto px-6 text-center">
-        <h2 class="text-4xl font-semibold text-blue-400 mb-8">SERVICE OFFERED</h2>
-    
+        <h2 class="text-4xl font-semibold text-blue-500 mb-8">SERVICE OFFERED</h2>
         <section>
           <!-- Horizontal Scrollable Container -->
           <div class="relative">
@@ -92,7 +90,7 @@
         </section>     
 
     <!-- About GIS -->
-    <section class="py-20 bg-gray">
+    <section id="details" class="py-20 bg-gray">
       <div class="container mx-auto px-6">
         <h2
           class="text-4xl font-bold text-center mb-16 text-gray-800"
@@ -109,11 +107,10 @@
           />
           </div>
           <div data-aos="fade-left">
-            <p class="text-lg text-gray-600 leading-relaxed text-left">
-              Our GIS department offers cutting-edge spatial data collection,
-              analysis, and mapping services. By leveraging advanced GIS tools
-              and technologies, we provide critical insights to support
-              environmental management, urban planning, and disaster response.
+            <p class="text-lg text-gray-600 leading-relaxed text-left text-justify font-sans">
+              GADC aims to create interdisciplinary collaborations for GIS-technology solutions 
+              for research, education, and community. The center offers software and hardware 
+              for GIS-technology driven research and conducts training to researchers.
             </p>
           </div>
         </div>
@@ -121,13 +118,12 @@
     </section>
 
     <!-- Services Section -->
-    <section class="py-20 bg-gray-100">
+    <section id="program" class="py-20 bg-gray-100">
       <div class="container mx-auto px-6">
         <h2
           class="text-4xl font-bold text-center mb-16 text-gray-800"
           data-aos="fade-up"
-        >
-          Our Services
+        >PROGRAMS AND INITIATIVES
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div
@@ -140,7 +136,7 @@
               class="w-full h-48 object-cover"
             />
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Spatial Analysis</h3>
+              <h3 class="text-xl font-bold mb-2">Geographic information systems (GIS) Training</h3>
               <p class="text-gray-600">
                 Analyze geographical data to inform decision-making processes.
               </p>
@@ -157,10 +153,9 @@
               class="w-full h-48 object-cover"
             />
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Geospatial Mapping</h3>
+              <h3 class="text-xl font-bold mb-2">Harmonized and Unified GIS for Industry Productivity (HUGIS) Project</h3>
               <p class="text-gray-600">
-                Create detailed maps for urban planning and environmental
-                management.
+                Batangas State University funded research project under the BRIDGES (Building Research and Innovation Developmental Goals for Engineering SUCs) Program
               </p>
             </div>
           </div>
@@ -175,7 +170,7 @@
               class="w-full h-48 object-cover"
             />
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Geospatial Data Collection</h3>
+              <h3 class="text-xl font-bold mb-2">GIS-based Emergency Displayed persons monitoring Systems (GEDS) Projectn</h3>
               <p class="text-gray-600">
                 Collect spatial data for environmental analysis and resource
                 management.
@@ -186,7 +181,7 @@
       </div>
     </section>
 
-    <section class="py-20 bg-blue-200">
+    <section id="contact" class="py-20 bg-blue-200">
       <div class="container mx-auto px-6 text-center">
         <h1 class="text-6xl font-bold text-gray-800 mb-3 pt-3">
           Contact Us
@@ -208,7 +203,8 @@
           <h2 class="text-3xl font-semibold text-gray-800 mb-2" >Get in Touch</h2>
           <p class="text-lg text-gray-700" >
             📞 Phone: (043) 425-0139 loc. 2409 <br>
-            ✉️ Email: gis.center@g.batstate-u.edu.ph
+            ✉️ Email: gis.center@g.batstate-u.edu.ph <br>
+            📍 Address: 2F STEER Hub Bldg., Batangas State University - <br> TNEU Alangilan Campus, Batangas City, Batangas, Philippines 4200
           </p>
         </div>
       </div>
