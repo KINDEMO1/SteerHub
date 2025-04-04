@@ -13,26 +13,26 @@
       <nav class="container mx-auto px-6 py-3">
         <div class="flex items-center justify-between">
           <div class="flex items-center space-x-4">
-            <img src="../images/BSU_LOGO.png" class="h-12" />
-            <h1 class="text-2xl font-bold text-blue-800">ESRC</h1>
+            <a href="/index.html">
+              <img src="../images/BSU_LOGO.png" class="h-12" alt="BSU Logo" />
+            </a>
+            <h1 onclick="document.getElementById('esrc').scrollIntoView({ behavior: 'smooth' })" class="text-2xl font-bold text-green-800">ESRC</h1>
           </div>
           <div class="hidden md:flex space-x-8">
-            <a href="#" class="text-gray-600 hover:text-blue-800">Home</a>
-            <a href="#" class="text-gray-600 hover:text-blue-800">Research</a>
-            <a href="#" class="text-gray-600 hover:text-blue-800"
-              >Publications</a
-            >
-            <a href="#" class="text-gray-600 hover:text-blue-800">Contact</a>
+            <a href="/index.html" class="text-gray-600 hover:text-blue-800">Home</a>
+            <a onclick="document.getElementById('program').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-green-800">Programs</a>
+            <a onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-green-800">Services</a>
+            <a onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-green-800">Contact</a>
           </div>
         </div>
       </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative h-screen">
+    <section id="esrc" class="relative h-screen">
       <div class="absolute inset-0">
         <img
-          src="../images/esrc2.png"
+          src="/images/esrc2.png"
           alt="ESRC"
           class="w-full h-full object-cover"
         />
@@ -43,16 +43,11 @@
       <div class="relative container mx-auto px-6 h-full flex items-center">
         <div class="max-w-2xl text-white" data-aos="fade-up">
           <h2 class="text-5xl font-bold mb-6">
-            Environmental Science Research
+            ELECTRONIC SYSTEMS RESEARCH CENTER (ESRC)
           </h2>
-          <p class="text-xl mb-8">
-            Pioneering research for environmental sustainability and climate
-            action.
-          </p>
-          <button
-            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition duration-300"
-          >
-            Explore Our Work
+          <button onclick="document.getElementById('details').scrollIntoView({ behavior: 'smooth' })"
+            class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg transition duration-300">
+            See More
           </button>
         </div>
       </div>
@@ -63,7 +58,7 @@
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     </head> 
 
-<section class="py-20 bg-gray-100">
+<section id="services" class="py-20 bg-gray-100">
       <div class="container mx-auto px-6 text-center">
         <h2 class="text-4xl font-semibold text-green-800 mb-8">SERVICE OFFERED</h2>
     
@@ -107,7 +102,7 @@
         </section>        
 
     <!-- About ESRC -->
-    <section class="py-20 bg-gray">
+    <section id="details" class="py-20 bg-gray">
       <div class="container mx-auto px-6">
         <h2
           class="text-4xl font-bold text-center mb-16 text-gray-800"
@@ -117,18 +112,18 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div data-aos="fade-right">
             <img
-            src="/SteerHub/images/4.png"
+            src="/images/about/esrc3.png"
             alt="About CTI"
             class="w-full rounded-lg shadow-lg"
           />
           </div>
           <div data-aos="fade-left">
-            <p class="text-lg text-gray-600 leading-relaxed text-left">
+            <p class="text-lg text-gray-600 leading-relaxed text-left text-justify font-sans">
               The Environmental Science Research Center (ESRC) is committed
               to conducting research on environmental challenges,
               sustainability, and climate change. Our team focuses on developing
               innovative solutions to protect the planet and improve quality of
-              life.
+              life. </B>
             </p>
           </div>
         </div>
@@ -136,13 +131,12 @@
     </section>
 
     <!-- Research Section -->
-    <section class="py-20 bg-gray-100">
+    <section id="program" class="py-20 bg-gray-100">
       <div class="container mx-auto px-6">
         <h2
           class="text-4xl font-bold text-center mb-16 text-gray-800"
-          data-aos="fade-up"
-        >
-          Our Research
+          data-aos="fade-up">
+        PROGRAMS AND PROJECTS
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div
@@ -150,15 +144,15 @@
             data-aos="fade-up"
           >
             <img
-              src="images/research1.jpg"
+              src="/images/about/BARAKO.png"
               alt="Research 1"
               class="w-full h-48 object-cover"
             />
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Sustainable Agriculture</h3>
+              <h3 class="text-xl font-bold mb-2">BARAKO</h3>
               <p class="text-gray-600">
-                Researching methods to increase agricultural productivity while
-                preserving natural resources.
+                Batangas Actions towards Revitalization and Acceleration of Kapeng BarakO Industry
+                Funded by Department of Agriculture - Bureau of Agricultural Research
               </p>
             </div>
           </div>
@@ -168,15 +162,15 @@
             data-aos-delay="100"
           >
             <img
-              src="images/research2.jpg"
+              src="/images/about/solar.png"
               alt="Research 2"
               class="w-full h-48 object-cover"
             />
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Climate Change Adaptation</h3>
+              <h3 class="text-xl font-bold mb-2">Solar Powered Mobile Irrigation System for Rice Paddy in Lobo</h3>
               <p class="text-gray-600">
-                Developing strategies to mitigate the impacts of climate change
-                on local communities.
+                Installed on July 2022, it remained to help irrigate a 1 hectare rice field.
+Funded by Batangas State University
               </p>
             </div>
           </div>
@@ -186,15 +180,16 @@
             data-aos-delay="200"
           >
             <img
-              src="images/research3.jpg"
+              src="/images/about/Solar Power Station for Irrigation Systems.png"
               alt="Research 3"
               class="w-full h-48 object-cover"
             />
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Environmental Education</h3>
+              <h3 class="text-xl font-bold mb-2">Movable and Collapsible Solar Power Station for Irrigation Systems</h3>
               <p class="text-gray-600">
-                Promoting awareness and education about environmental
-                sustainability and conservation.
+                Association in Batangas, Batangas State University introduced collapsible and solar-powered
+                irrigators on March 22, 2022. 
+                Funded by the Department of Science and Technology
               </p>
             </div>
           </div>
@@ -202,7 +197,7 @@
       </div>
     </section>
 
-    <section class="py-20 bg-green-200">
+    <section id="contact" class="py-20 bg-green-200">
       <div class="container mx-auto px-6 text-center">
         <h1 class="text-6xl font-bold text-gray-800 mb-3 pt-3">
           Contact Us
@@ -215,16 +210,18 @@
       <div class="container mx-auto px-6 flex justify-center items-center gap-10">
     
         <div class="flex-shrink-0">
-          <img src="../images/qrcode/qrDTC.png" 
+          <h2 class="text-3xl font-semibold text-gray-800 mb-2" >Get in Touch</h2>
+          <img src="../images/qrcode/qrESRC.png" 
                alt="Contact Image" 
                class="max-w-[150px] max-h-[150px] rounded-lg shadow-md">
         </div>
     
         <div class="text-left">
-          <h2 class="text-3xl font-semibold text-gray-800 mb-2" >Get in Touch</h2>
+         
           <p class="text-lg text-gray-700" >
-            📞 Phone: (043) 425-0139 loc. 2405 <br>
-            ✉️ Email: esrc@g.batstate-u.edu.ph
+            📞 Phone: (043) 980-0385 loc. 2405<br>
+            ✉️ Email: esrc@g.batstate-u.edu.ph <br>
+            📍 Address: 2F STEER Hub Bldg., Batangas State University - <br> TNEU Alangilan Campus, Batangas City, Batangas, Philippines 4200
           </p>
         </div>
       </div>

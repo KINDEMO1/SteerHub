@@ -12,26 +12,28 @@
       <nav class="container mx-auto px-6 py-3">
         <div class="flex items-center justify-between">
           <div class="flex items-center space-x-4">
-            <img src="../images/BSU_LOGO.png" class="h-12" />
-            <h1 class="text-2xl font-bold text-blue-800">CTI</h1>
+            <a href="/index.html">
+              <img src="../images/BSU_LOGO.png" class="h-12" alt="BSU Logo" />
+            </a>
+            <h1 onclick="document.getElementById('cti').scrollIntoView({ behavior: 'smooth' })"
+            class="text-2xl font-bold text-red-800">CTI</h1>
           </div>
           <div class="hidden md:flex space-x-8">
-            <a href="#" class="text-gray-600 hover:text-blue-800">Home</a>
-            <a href="#" class="text-gray-600 hover:text-blue-800">Programs</a>
-            <a href="#" class="text-gray-600 hover:text-blue-800">Startups</a>
-            <a href="#" class="text-gray-600 hover:text-blue-800">Contact</a>
+            <a href="/index.html" class="text-gray-600 hover:text-blue-800">Home</a>
+            <a onclick="document.getElementById('program').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-red-800">Programs</a>
+            <a onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-red-800">Services</a>
+            <a onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-red-800">Contact</a>
           </div>
         </div>
       </nav>
     </header>
 
-    <section class="relative h-screen">
+    <section id="cti" class="relative h-screen">
       <div class="absolute inset-0">
         <img
-        src="../images/CTI.png"
+        src="/images/CTI.png"
         alt="Research Lab"
-        class="w-full h-full object-cover"
-      />
+        class="w-full h-full object-cover"/>
         <div
           class="absolute inset-0 bg-gradient-to-r from-red-900/80 to-white-500/60"
         ></div>
@@ -39,16 +41,13 @@
       <div class="relative container mx-auto px-6 w- full h-full flex items-center">
         <div class="max-w-2xl text-white" data-aos="fade-up">
           <h2 class="text-5xl font-bold mb-6">
-            Empowering Innovators & Startups
+            CENTER FOR TECHNOPRENEURSHIP AND INNOVATION (CTI)
           </h2>
-          <p class="text-xl mb-8">
-            CTI supports entrepreneurs in transforming ideas into market-ready
-            products.
-          </p>
-          <button
-            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition duration-300">
-            Explore Our Programs
-          </button>
+          <button onclick="document.getElementById('details').scrollIntoView({ behavior: 'smooth' })"
+          class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg transition duration-300"
+        >
+          See More
+        </button>
         </div>
       </div>
     </section>
@@ -58,7 +57,7 @@
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     </head> 
     
-    <section class="py-20 bg-gray-100">
+    <section id="services" class="py-20 bg-gray-100">
       <div class="container mx-auto px-6 text-center">
         <h2 class="text-4xl font-semibold text-red-500 mb-8">SERVICE OFFERED</h2>
     
@@ -110,28 +109,35 @@
           </div>
         </section>        
     
-        <section class="py-20 bg-gray w-full">
+        <section id="details" class="py-20 bg-gray w-full">
       <div class="container mx-auto px-6">
         <h2
           class="text-4xl font-bold text-center mb-16 text-white-800"
           >
           ABOUT CTI
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div id="details" class="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div >
             <img
-              src="/SteerHub/images/3.png"
+              src="/images/about/ctiabout.jpg"
               alt="About CTI"
               class="w-full rounded-lg shadow-lg"
             />
           </div>
-          <div>
-            <p class="text-lg text-gray-600 leading-relaxed text-left">
+          <div> 
+            <p class="text-lg text-gray-600 leading-relaxed text-left text-justify font-sans">
+            The BatStateU CTI focuses on developing programs and activities geared towards creating 
+            a sustainable entrepreneurial ecosystem for the university. As an academic institution, 
+            the University believes in the importance of adequate and efficient training among budding 
+            entrepreneurs to make them competitive in their CTI entrepreneurial endeavor.
+          </p>
+
+            <p class="text-lg text-gray-600 leading-relaxed mt-4 text-left text-justify font-sans">
               Sprearheding technopreneurship and innovations in CALABARZON, 
               BatStateU Center for Technopreneurship and Innovation is a university 
               based technology business incubator.
             </p>
-            <p class="text-lg text-gray-600 leading-relaxed mt-4 text-left">
+            <p class="text-lg text-gray-600 leading-relaxed mt-4 text-left text-justify font-sans">
               CTI works closely with researchers, students, and industry
               professionals to drive innovation-driven entrepreneurship.
             </p>
@@ -140,10 +146,10 @@
       </div>
     </section>
 
-    <section class="py-20 bg-gray-100">
+    <section id="program" class="py-20 bg-gray-100">
       <div class="container mx-auto px-6">
         <h2
-          class="text-4xl font-bold text-center mb-16 text-gray-800"
+           class="text-4xl font-bold text-center mb-16 text-gray-800"
           data-aos="fade-up">
           PROGRAMS AND INITIATIVES
         </h2>
@@ -152,15 +158,14 @@
             class="bg-white rounded-lg shadow-lg overflow-hidden"
             data-aos="fade-up">
             <img
-              src="images/startup-mentorship.jpg"
+              src="/images/about/startups.jpg"
               alt="Mentorship"
               class="w-full h-48 object-cover"
             />
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Startup Mentorship</h3>
+              <h3 class="text-xl font-bold mb-2">Collaboration</h3>
               <p class="text-gray-600">
-                Guidance from industry experts to develop viable business
-                models.
+                Community development and partnerships to create a sustainable entrepreneurial ecosystem in the CALABARZON region.
               </p>
             </div>
           </div>
@@ -170,15 +175,14 @@
             data-aos-delay="100"
           >
             <img
-              src="images/funding.jpg"
+              src="/images/about/funding.jpg"
               alt="Funding"
               class="w-full h-48 object-cover"
             />
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Funding & Grants</h3>
+              <h3 class="text-xl font-bold mb-2">Technopreneurship </h3>
               <p class="text-gray-600">
-                Access to financial support for startup growth and product
-                development.
+                Integrating Technopreneurship 101 in Engineering, Technology and Computing Science programs and training for faculty to stimulate the entrepreneurial mindset among the academic community of the University.
               </p>
             </div>
           </div>
@@ -188,15 +192,14 @@
             data-aos-delay="200"
           >
             <img
-              src="images/networking.jpg"
+              src="/images/about/networking.png"
               alt="Networking"
               class="w-full h-48 object-cover"
             />
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Networking Events</h3>
+              <h3 class="text-xl font-bold mb-2">Incubation </h3>
               <p class="text-gray-600">
-                Opportunities to connect with investors, partners, and fellow
-                entrepreneurs.
+                R&D outputs and venture ideas from the Technopreneurship classes are incubated to be commercially viable.
               </p>
             </div>
           </div>
@@ -204,9 +207,9 @@
       </div>
     </section>
 
-    <section class="py-20 bg-red-200">
+    <section id="contact" class="py-20 bg-red-200">
       <div class="container mx-auto px-6 text-center">
-        <h1 class="text-6xl font-bold text-gray-800 mb-3 pt-3">
+        <h1 class="text-5xl font-bold text-gray-800 mb-3 pt-3">
           Contact Us
         </h1>
         <p class="text-lg text-gray-600 mb-8">
@@ -218,23 +221,27 @@
       <div class="container mx-auto px-6 flex justify-center items-center gap-10">
     
         <div class="flex-shrink-0">
+          <h2 class="text-3xl font-semibold text-gray-800 mb-2" >Get in Touch</h2>
           <img src="../images/qrcode/qrCIT.png" 
                alt="Contact Image" 
                class="max-w-[150px] max-h-[150px] rounded-lg shadow-md">
         </div>
     
         <div class="text-left">
-          <h2 class="text-3xl font-semibold text-gray-800 mb-2" >Get in Touch</h2>
+          
           <p class="text-lg text-gray-700" >
             📞 Phone: (043) 425-0139 loc. 2404 <br>
-            ✉️ Email: innovation@g.batstate-u.edu.ph
+            ✉️ Email: innovation@g.batstate-u.edu.ph <br>
+            📍 Address: 2F STEER Hub Bldg., Batangas State University - <br> TNEU Alangilan Campus, Batangas City, Batangas, Philippines 4200<br>
+            🌐 Website: http://cti.batstate-u.edu.ph/<br>
+            📘 Facebook: https://www.facebook.com/batstateucti
           </p>
         </div>
       </div>
     </section>
-    
-    <footer class="bg-gray-900 text-white py-12">
-      <div class="container mx-auto px-6 text-center">
+
+    <footer class="bg-gray-900 text-white py-12 ">
+      <div class="container mx-auto px-6 text-center w-auto">
         <p>© 2025 CTI. All rights reserved.</p>
       </div>
     </footer>

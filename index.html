@@ -13,19 +13,18 @@
       <nav class="container mx-auto px-6 py-3">
         <div class="flex items-center justify-between">
           <div class="flex items-center space-x-4">
-            <img src="images/BSU_LOGO.png" class="h-12" />
-            <h1 class="text-2xl font-bold text-blue-800">STEER Hub</h1>
+            <a href="/index.html">
+              <img src="images/BSU_LOGO.png" class="h-12" alt="BSU Logo" />
+            </a>
+            <h1 class="text-2xl font-bold text-red-800">STEER Hub</h1>
           </div>
           <div class="hidden md:flex space-x-8">
-            <a href="#home" class="text-gray-600 hover:text-blue-800">Home</a>
-            <a href="#departments" class="text-gray-600 hover:text-blue-800"
-              >Departments</a
+            <a onclick="document.getElementById('home').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800">Home</a>
+            <a onclick="document.getElementById('departments').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800"
+              >Research Centers</a
             >
-            <a href="#" class="text-gray-600 hover:text-blue-800"
-              >Research Areas</a
-            >
-            <a href="#" class="text-gray-600 hover:text-blue-800">About Us</a>
-            <a href="#footer" class="text-gray-600 hover:text-blue-800"
+            <a onclick="document.getElementById('details').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800">About Us</a>
+            <a onclick="document.getElementById('footer').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800"
               >Contact</a
             >
           </div>
@@ -57,11 +56,12 @@
             university research, local locators, and PEZA locators, driving
             economic growth.
           </p>
-          <button
-            class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg transition duration-300"
-          >
-            Explore Our Research
+          <button onclick="document.getElementById('details').scrollIntoView({ behavior: 'smooth' })"
+          class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg transition duration-300">
+            See More
           </button>
+  
+          
         </div>
       </div>
     </section>
@@ -73,7 +73,7 @@
           class="text-4xl font-bold text-center mb-16 text-gray-800"
           data-aos="fade-up"
         >
-          Our Departments
+          RESEARCH CENTERS
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <a href="departments/likha-fablab.html" class="block">
@@ -181,6 +181,47 @@
               </div>
             </div>
           </a>
+        </div>
+        <div class="relative container mx-auto px-6 h-full flex items-center font-sans p-10 h-min-screen">
+          <h2 class="prose prose-lg text-xl text-black text-justify font-sans pt-3">
+            Batangas State University, the National Engineering University, has several 
+            research centers on its campus that provide opportunities for students, faculty, 
+            and even outside stakeholders to explore new ideas and make important contributions 
+            to their field of study. These research centers cover a variety of disciplines, 
+            such as science, engineering, technology, and the environment, among others, and 
+            are equipped with the latest tools and resources to support innovative research projects. 
+            If you're looking for hands-on experience in research or looking to make your next big discovery, 
+            BatStateU-The NEU is a great place to begin.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="details" class="relative custom-bg bg-cover bg-center bg-no-repeat">
+      <div class="relative container mx-auto px-6 h-full flex items-center font-sans p-10 h-min-screen">
+        <div class="prose prose-lg text-xl text-black text-justify font-sans">
+          <h1 class="text-left text-3xl mb-6 font-bold" style="font-family: Arial, sans-serif;">
+            INFORMATION
+          </h1>
+
+          <p class="pt-3">
+            Driven to develop competitive advantage through improved research capability and strong research culture, the university has constructed a 120 million pesos worth of research infrastructure, the Science, Technology, Engineering and Environment Research Hub (STEER Hub). The Hub will house research centers and laboratories in specialized fields in engineering, science, technology and environment with focus on Artificial Intelligence and Data Analytics.
+          </p>
+          <p class="pt-3">
+            These research centers and laboratories aim to develop high – level research in the different fields of science, engineering, technology and environment which has impact to the society. Situated in the technology campus in Alangilan, Batangas City, the hub will be equipped with laboratories for different fields, lecture rooms for small and large class, conference room, a FabLab and an open space at the fifth floor that can be used during hosting of symposium or workshop. Indeed, the university values research as a potent catalyst for alleviating poverty and achieving economic stability.
+          </p>
+          <p class="pt-3">
+            Last March 9, 2017, the Regional Development Council through RDC Resolution No. IV-A-18-2017 Approved the Batangas State University Science, Technology Engineering and Environment Research (STEER) Hub as CALABARZON’s Center for Science, Technology Engineering and Environment Research. This signifies the university‟s initiative to take the lead in conducting high – impact researches that can benefit the region. STEER Hub shall be a facility open to research agencies, public and private Higher Education Institution (HEI) in the region.
+          </p>
+          <p class="pt-3">
+            The STEER Hub houses research centers in the first and second floors and locator spaces for startups and exporting industries. The research centers include the Center for Technopreneurship and Innovation, Digital Transformation Center, Electronic Systems Research Center, GIS Applications Development Center, Manufacturing Research Center and Materials Testing and Calibration Center.
+          </p>
+          <p class="pt-3">
+            Interim, STEER Hub is the home of the first Knowledge, Innovation and Science Technology (KIST) Park proclaimed as a Special Economic Zone (SEZ) by Pres. Rodrigo Duterte on May 2020 by virtue of Presidential Proclamation No. 947, s.2020.
+          </p>
+          <p class="pt-3">
+            The university aims to provide significant support to the government in alleviating poverty and achieving economic stability and to become an instrument for sustainable national development that is driven by technology and innovation for global competitiveness.
+          </p>
         </div>
       </div>
     </section>
