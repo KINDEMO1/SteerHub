@@ -19,14 +19,10 @@
             <h1 class="text-2xl font-bold text-red-800">STEER Hub</h1>
           </div>
           <div class="hidden md:flex space-x-8">
-            <a onclick="document.getElementById('home').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800">Home</a>
-            <a onclick="document.getElementById('departments').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800"
-              >Research Centers</a
-            >
-            <a onclick="document.getElementById('details').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800">About Us</a>
-            <a onclick="document.getElementById('footer').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800"
-              >Contact</a
-            >
+            <a onclick="document.getElementById('home').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800 cursor-pointer">Home</a>
+            <a onclick="document.getElementById('departments').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800 cursor-pointer">Research Centers</a>
+            <a onclick="document.getElementById('details').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800 cursor-pointer">About Us</a>
+            <a onclick="document.getElementById('footer').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800 cursor-pointer">Contact</a>
           </div>
         </div>
       </nav>
@@ -40,11 +36,9 @@
           alt="Research Lab"
           class="w-full h-full object-cover"
         />
-        <div
-          class="absolute inset-0 bg-gradient-to-r from-red-900/90 to-gray-900/75"
-        ></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-red-900/90 to-gray-900/75"></div>
       </div>
-      <div class="relative container mx-auto px-6 h-full flex items-center">
+      <div class="relative container mx-auto px-6 h-full flex items-center justify-between">
         <div class="max-w-2xl text-white" data-aos="fade-up">
           <h2 class="text-5xl font-bold mb-6">
             Science, Technology, Engineering and Environment Research Hub
@@ -57,13 +51,21 @@
             economic growth.
           </p>
           <button onclick="document.getElementById('details').scrollIntoView({ behavior: 'smooth' })"
-          class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg transition duration-300">
+            class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg transition duration-300">
             See More
           </button>
-  
-          
         </div>
       </div>
+      
+      <!-- Chatbot Button -->
+      <a href="https://chatgpt.com/g/g-BezUJjM4W-bsu-chatbot" target="_blank" class="group fixed bottom-6 right-6 bg-white text-red-700 border border-red-700 rounded-full p-3 shadow-lg hover:bg-red-700 hover:text-white transition duration-300 z-50">
+        <div class="absolute right-20 bottom-8 hidden group-hover:flex items-center whitespace-nowrap bg-white text-red-700 text-sm font-semibold px-4 py-2 rounded-[50px] shadow-md border border-red-300 transition-all duration-300
+        before:content-[''] before:absolute before:right-[-6px] before:bottom-2 before:border-[10px] before:border-transparent before:border-l-white before:drop-shadow">
+            Chat with us!
+        </div>   
+        <img src="images/logo/bsuchatbot.png" class="w-12 h-12 scale-125 object-contain" />
+    </a>
+    
     </section>
 
     <!-- Department Carousel -->
@@ -225,82 +227,38 @@
         </div>
       </div>
     </section>
-    
-    <section class="relative custom-bg min-h-screen">
-      <div class="container mx-auto px-6 h-full flex items-center font-sans p-10">
-        <div class="prose prose-lg text-xl text-black text-justify font-sans">
-          
-          <h1 class="text-left text-3xl mb-6 font-bold" style="font-family: Arial, sans-serif;">
-            INFORMATION
-          </h1>
-
-          <p class="pt-3">
-            Driven to develop competitive advantage through improved research capability and strong research culture, the university has constructed a 120 million pesos worth of research infrastructure, the Science, Technology, Engineering and Environment Research Hub (STEER Hub). The Hub will house research centers and laboratories in specialized fields in engineering, science, technology and environment with focus on Artificial Intelligence and Data Analytics.
-          </p>
-          <p class="pt-3">
-            These research centers and laboratories aim to develop high – level research in the different fields of science, engineering, technology and environment which has impact to the society. Situated in the technology campus in Alangilan, Batangas City, the hub will be equipped with laboratories for different fields, lecture rooms for small and large class, conference room, a FabLab and an open space at the fifth floor that can be used during hosting of symposium or workshop. Indeed, the university values research as a potent catalyst for alleviating poverty and achieving economic stability.
-          </p>
-          <p class="pt-3">
-            Last March 9, 2017, the Regional Development Council through RDC Resolution No. IV-A-18-2017 Approved the Batangas State University Science, Technology Engineering and Environment Research (STEER) Hub as CALABARZON’s Center for Science, Technology Engineering and Environment Research. This signifies the university‟s initiative to take the lead in conducting high – impact researches that can benefit the region. STEER Hub shall be a facility open to research agencies, public and private Higher Education Institution (HEI) in the region.
-          </p>
-          <p class="pt-3">
-            The STEER Hub houses research centers in the first and second floors and locator spaces for startups and exporting industries. The research centers include the Center for Technopreneurship and Innovation, Digital Transformation Center, Electronic Systems Research Center, GIS Applications Development Center, Manufacturing Research Center and Materials Testing and Calibration Center.
-          </p>
-          <p class="pt-3">
-            Interim, STEER Hub is the home of the first Knowledge, Innovation and Science Technology (KIST) Park proclaimed as a Special Economic Zone (SEZ) by Pres. Rodrigo Duterte on May 2020 by virtue of Presidential Proclamation No. 947, s.2020.
-          </p>
-          <p class="pt-3">
-            The university aims to provide significant support to the government in alleviating poverty and achieving economic stability and to become an instrument for sustainable national development that is driven by technology and innovation for global competitiveness.
-          </p>
-        </div>
-      </div>
-    </section>
+  
 
     <footer id="footer" class="bg-gray-900 text-white py-12">
       <div class="container mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Add your footer content here -->
           <div>
             <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+            <p>Batangas State University - The NEU</p>
             <p>Alangilan, Batangas City</p>
-            <p>Philippines 4200</p>
-            <p>contact@batstate-u.edu.ph</p>
+            <p>Email: info@bsu.edu.ph</p>
           </div>
           <div>
             <h3 class="text-xl font-bold mb-4">Quick Links</h3>
             <ul class="space-y-2">
-              <li>
-                <a href="#" class="hover:text-blue-400">Research Areas</a>
-              </li>
-              <li><a href="#" class="hover:text-blue-400">Publications</a></li>
-              <li><a href="#" class="hover:text-blue-400">Careers</a></li>
+              <li><a href="#home" class="hover:text-red-400">Home</a></li>
+              <li><a href="#departments" class="hover:text-red-400">Research Centers</a></li>
+              <li><a href="#details" class="hover:text-red-400">About Us</a></li>
+              <li><a href="#footer" class="hover:text-red-400">Contact</a></li>
             </ul>
           </div>
           <div>
             <h3 class="text-xl font-bold mb-4">Follow Us</h3>
             <div class="flex space-x-4">
-              <a href="#" class="hover:text-blue-400">Twitter</a>
-              <a href="#" class="hover:text-blue-400">LinkedIn</a>
-              <a href="#" class="hover:text-blue-400">Facebook</a>
+              <a href="#" class="hover:text-red-400">Facebook</a>
+              <a href="#" class="hover:text-red-400">Twitter</a>
+              <a href="#" class="hover:text-red-400">Instagram</a>
             </div>
           </div>
-          <div>
-            <h3 class="text-xl font-bold mb-4">Newsletter</h3>
-            <form class="flex">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                class="px-4 py-2 w-full rounded-l-lg text-gray-900"
-              />
-              <button
-                class="bg-blue-600 px-4 py-2 rounded-r-lg hover:bg-blue-700"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
         </div>
-        <div class="mt-8 pt-8 border-t border-gray-800 text-center">
-          <p>© 2025 SteerHub Research Center. All rights reserved.</p>
+        <div class="text-center mt-10 text-sm text-gray-400">
+          &copy; 2025 Batangas State University - The National Engineering University. All rights reserved.
         </div>
       </div>
     </footer>
