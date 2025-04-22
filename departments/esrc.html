@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESRC - Environmental Science Research Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+      <nav class="container mx-auto px-6 py-3">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-4">
+            <a href="/index.html">
+              <img src="../images/BSU_LOGO.png" class="h-12" alt="BSU Logo" />
+            </a>
+            <h1 onclick="document.getElementById('esrc').scrollIntoView({ behavior: 'smooth' })" class="text-2xl font-bold text-green-800">ESRC</h1>
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="/index.html" class="text-gray-600 hover:text-blue-800">Home</a>
+            <a onclick="document.getElementById('program').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-green-800">Programs</a>
+            <a onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-green-800">Services</a>
+            <a onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-green-800">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="esrc" class="relative h-screen">
+      <div class="absolute inset-0">
+        <img
+          src="/images/esrc2.png"
+          alt="ESRC"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-green-900/80 to-white-500/60"
+        ></div>
+      </div>
+      <div class="relative container mx-auto px-6 h-full flex items-center">
+        <div class="max-w-2xl text-white" data-aos="fade-up">
+          <h2 class="text-5xl font-bold mb-6">
+            ELECTRONIC SYSTEMS RESEARCH CENTER (ESRC)
+          </h2>
+          <button onclick="document.getElementById('details').scrollIntoView({ behavior: 'smooth' })"
+            class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg transition duration-300">
+            See More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <head>
+      <!-- Font Awesome CDN -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    </head> 
+
+<section id="services" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-semibold text-green-800 mb-8">SERVICE OFFERED</h2>
+    
+        <section>
+          <!-- Horizontal Scrollable Container -->
+          <div class="relative">
+            <div class="grid grid-cols-3 gap-4 py-4">
+              <!-- Item 1: Locators and Co-Working Spaces -->
+              <!-- Item 1: AI Development, IoT, and Data Science -->
+          <div class="flex flex-col items-center justify-center mb-4">
+            <i class="fas fa-brain text-3xl text-green-800 mb-4"></i> <!-- Brain icon for AI -->
+            <p class="text-lg text-gray-700">Electronic circuit design and simulation</p>
+          </div>
+
+          <!-- Item 2: Research Consultation and Collaboration -->
+          <div class="flex flex-col items-center justify-center mb-4">
+            <i class="fas fa-users-cog text-3xl text-green-800 mb-4"></i> <!-- Users cog icon for collaboration -->
+            <p class="text-lg text-gray-700">PCB Fabrication</p>
+          </div>
+
+          <!-- Item 3: Trainings -->
+          <div class="flex flex-col items-center justify-center mb-4">
+            <i class="fas fa-chalkboard-teacher text-3xl text-green-800 mb-4"></i> <!-- Chalkboard icon for training -->
+            <p class="text-lg text-gray-700">Signals testings and analysis</p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center mb-4">
+            <i class="fas fa-chalkboard-teacher text-3xl text-green-800 mb-4"></i> <!-- Chalkboard icon for training -->
+            <p class="text-lg text-gray-700">Data Acquisition and sensor measurements</p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center mb-4">
+            <i class="fas fa-chalkboard-teacher text-3xl text-green-800 mb-4"></i> <!-- Chalkboard icon for training -->
+            <p class="text-lg text-gray-700">Category 1 and 2 measurements 
+              of electronic circuit boards such as 
+              continuity, functionality and energy 
+              efficiency testing</p>
+          </div>
+            </div>
+          </div>
+        </section>        
+
+    <!-- About ESRC -->
+    <section id="details" class="py-20 bg-gray">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-4xl font-bold text-center mb-16 text-gray-800"
+          data-aos="fade-up">
+          ABOUT ESRC
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div data-aos="fade-right">
+            <img
+            src="/images/about/esrc3.png"
+            alt="About CTI"
+            class="w-full rounded-lg shadow-lg"
+          />
+          </div>
+          <div data-aos="fade-left">
+            <p class="text-lg text-gray-600 leading-relaxed text-left text-justify font-sans">
+              The Environmental Science Research Center (ESRC) is committed
+              to conducting research on environmental challenges,
+              sustainability, and climate change. Our team focuses on developing
+              innovative solutions to protect the planet and improve quality of
+              life. </B>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="program" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-4xl font-bold text-center mb-16 text-gray-800"
+          data-aos="fade-up">
+        PROGRAMS AND PROJECTS
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden"
+            data-aos="fade-up"
+          >
+            <img
+              src="/images/about/BARAKO.png"
+              alt="Research 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">BARAKO</h3>
+              <p class="text-gray-600">
+                Batangas Actions towards Revitalization and Acceleration of Kapeng BarakO Industry
+                Funded by Department of Agriculture - Bureau of Agricultural Research
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              src="/images/about/solar.png"
+              alt="Research 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Solar Powered Mobile Irrigation System for Rice Paddy in Lobo</h3>
+              <p class="text-gray-600">
+                Installed on July 2022, it remained to help irrigate a 1 hectare rice field.
+Funded by Batangas State University
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="/images/about/Solar Power Station for Irrigation Systems.png"
+              alt="Research 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Movable and Collapsible Solar Power Station for Irrigation Systems</h3>
+              <p class="text-gray-600">
+                Association in Batangas, Batangas State University introduced collapsible and solar-powered
+                irrigators on March 22, 2022. 
+                Funded by the Department of Science and Technology
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-green-200">
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-6xl font-bold text-gray-800 mb-3 pt-3">
+          Contact Us
+        </h1>
+        <p class="text-lg text-gray-600 mb-8">
+          Interested in joining our startup programs? Reach out today!
+        </p>
+      </div>
+
+      <div class="container mx-auto px-6 flex justify-center items-center gap-10">
+    
+        <div class="flex-shrink-0">
+          <h2 class="text-3xl font-semibold text-gray-800 mb-2" >Get in Touch</h2>
+          <img src="../images/qrcode/qrESRC.png" 
+               alt="Contact Image" 
+               class="max-w-[150px] max-h-[150px] rounded-lg shadow-md">
+        </div>
+    
+        <div class="text-left">
+         
+          <p class="text-lg text-gray-700" >
+            📞 Phone: (043) 980-0385 loc. 2405<br>
+            ✉️ Email: esrc@g.batstate-u.edu.ph <br>
+            📍 Address: 2F STEER Hub Bldg., Batangas State University - <br> TNEU Alangilan Campus, Batangas City, Batangas, Philippines 4200
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-6 text-center">
+        <p>© 2025 ESRC. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

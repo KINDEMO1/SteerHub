@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Likha FabLab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+      <nav class="container mx-auto px-6 py-3">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-4">
+            <a href="/index.html">
+              <img src="../images/BSU_LOGO.png" class="h-12" alt="BSU Logo" />
+            </a>
+            <h1 onclick="document.getElementById('likha').scrollIntoView({ behavior: 'smooth' })"class="text-2xl font-bold text-blue-800">Likha FabLab</h1>
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="/index.html" class="text-gray-600 hover:text-blue-800">Home</a>
+            <a onclick="document.getElementById('program').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800">Programs</a>
+            <a onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800">Services</a>
+            <a onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" class="text-gray-600 hover:text-blue-800">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="likha" class="relative h-screen">
+      <div class="absolute inset-0">
+        <img
+          src="/images/likha-fablab.png"
+          alt="Likha FabLab"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-white-500/60"
+        ></div>
+      </div>
+      <div class="relative container mx-auto px-6 h-full flex items-center">
+        <div class="max-w-2xl text-white" data-aos="fade-up">
+          <h2 class="text-5xl font-bold mb-6">MANUFACUTRING RESEARCH CENTER (MRC OR LIKHA FABLAB)</h2>
+          <button onclick="document.getElementById('details').scrollIntoView({ behavior: 'smooth' })"
+            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition duration-300"
+          >
+            See More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    
+    <head>
+      <!-- Font Awesome CDN -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    </head> 
+    
+    <section id="services" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-semibold text-blue-500 mb-8">SERVICE OFFERED</h2>
+    
+        <section>
+          <div class="relative">
+            <div class="grid grid-cols-4 gap-4 py-4">
+             <!-- Item 1: Digital Design -->
+              <div class="flex flex-col items-center justify-center mb-4">
+                <i class="fas fa-pencil-ruler text-3xl text-blue-500 mb-4"></i> 
+                <p class="text-lg text-gray-700">Digital Design</p>
+              </div>
+
+              <!-- Item 2: 3D Printing -->
+              <div class="flex flex-col items-center justify-center mb-4">
+                <i class="fas fa-cube text-3xl text-blue-500 mb-4"></i> 
+                <p class="text-lg text-gray-700">3D Printing</p>
+              </div>
+
+              <!-- Item 3: Laser Engraving/Cutting -->
+              <div class="flex flex-col items-center justify-center mb-4">
+                <i class="fas fa-burn text-3xl text-blue-500 mb-4"></i> 
+                <p class="text-lg text-gray-700">Laser Engraving/Cutting</p>
+              </div>
+
+              <!-- Item 4: CNC Wood Router -->
+              <div class="flex flex-col items-center justify-center mb-4">
+                <i class="fas fa-tree text-3xl text-blue-500 mb-4"></i>
+                <p class="text-lg text-gray-700">CNC Wood Router</p>
+              </div>
+
+              <!-- Item 5: Vacuum Forming -->
+              <div class="flex flex-col items-center justify-center mb-4">
+                <i class="fas fa-wind text-3xl text-blue-500 mb-4"></i> 
+                <p class="text-lg text-gray-700">Vacuum Forming</p>
+              </div>
+
+              <!-- Item 6: Large Format Printing -->
+              <div class="flex flex-col items-center justify-center mb-4">
+                <i class="fas fa-print text-3xl text-blue-500 mb-4"></i> 
+                <p class="text-lg text-gray-700">Large Format Printing</p>
+              </div>
+
+              <!-- Item 7: CNC Metal Milling -->
+              <div class="flex flex-col items-center justify-center mb-4">
+                <i class="fas fa-industry text-3xl text-blue-500 mb-4"></i> 
+                <p class="text-lg text-gray-700">CNC Metal Milling</p>
+              </div>
+
+              <!-- Item 8: Trainings -->
+              <div class="flex flex-col items-center justify-center mb-4">
+                <i class="fas fa-chalkboard-teacher text-3xl text-blue-500 mb-4"></i>
+                <p class="text-lg text-gray-700">Trainings</p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+    <!-- About Likha FabLab -->
+    <section id="details" class="py-20 bg-gray">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-4xl font-bold text-center mb-16 text-gray-800"
+          data-aos="fade-up">
+          ABOUT LIKHA FABLAB
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div data-aos="fade-right">
+            <img
+              src="/images/about/LIKHA Picture.jpg"
+              alt="About FabLab"
+              class="w-full rounded-lg shadow-lg"
+            />
+          </div>
+          <div data-aos="fade-left">
+            <p class="text-lg text-gray-600 leading-relaxed text-left text-justify font-sans">
+              Likha FabLab is a state-of-the-art fabrication laboratory
+              dedicated to advanced manufacturing and prototyping. Equipped with
+              the latest in 3D printing, CNC machining, laser cutting, and
+              electronics fabrication, the lab empowers researchers, engineers,
+              and entrepreneurs to turn their ideas into reality.
+            </p>
+            <p class="text-lg text-gray-600 leading-relaxed mt-4 text-left text-justify font-sans">
+              Whether you're working on a research project, a startup prototype,
+              or an industrial solution, Likha FabLab provides the tools and
+              expertise needed to innovate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="program" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-4xl font-bold text-center mb-16 text-gray-800"
+          data-aos="fade-up"
+        >PROGRAMS AND INITIATIVES
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden"
+            data-aos="fade-up"
+          >
+            <img
+              src="/images/about/3dprinting.png"
+              alt="Project 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Trainings, Seminars and Workshops</h3>
+             <p class="text-gray-600">
+                
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              src="/images/about/automation.jpg"
+              alt="Project 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Digital Fabrication</h3>
+              <p class="text-gray-600">
+                
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="/images/about/iotdevices.jpg"
+              alt="Project 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Partnership with MSMEs, startups, researchers and industry</h3>
+              <p class="text-gray-600">
+               
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-blue-200">
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-6xl font-bold text-gray-800 mb-3 pt-3">
+          Contact Us
+        </h1>
+        <p class="text-lg text-gray-600 mb-8">
+          Interested in joining our startup programs? Reach out today!
+        </p>
+      </div>
+
+      <div class="container mx-auto px-6 flex justify-center items-center gap-10">
+    
+        <div class="flex-shrink-0">
+          <img src="../images/qrcode/qrLIKHA.png" 
+               alt="Contact Image" 
+               class="max-w-[150px] max-h-[150px] rounded-lg shadow-md">
+        </div>
+    
+        <div class="text-left">
+          <h2 class="text-3xl font-semibold text-gray-800 mb-2" >Get in Touch</h2>
+          <p class="text-lg text-gray-700" >
+            📞 Phone: (043) 425-0139 loc. 2402 <br>
+            ✉️ Email: likhafablab@g.batstate-u.edu.ph <br>
+            📍 Address: 2F STEER Hub Bldg., Batangas State University - <br> TNEU Alangilan Campus, Batangas City, Batangas, Philippines 4200
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-6 text-center">
+        <p>© 2025 Likha FabLab. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
