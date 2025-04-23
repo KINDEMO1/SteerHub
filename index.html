@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Research Center</title>
+    <title>STEER Hub</title>
+    <link rel="icon" type="image/png" href="images/BSU_LOGO.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
@@ -58,14 +59,43 @@
       </div>
       
       <!-- Chatbot Button -->
-      <a href="https://chatgpt.com/g/g-BezUJjM4W-bsu-chatbot" target="_blank" class="group fixed bottom-6 right-6 bg-white text-red-700 border border-red-700 rounded-full p-3 shadow-lg hover:bg-red-700 hover:text-white transition duration-300 z-50">
-        <div class="absolute right-20 bottom-8 hidden group-hover:flex items-center whitespace-nowrap bg-white text-red-700 text-sm font-semibold px-4 py-2 rounded-[50px] shadow-md border border-red-300 transition-all duration-300
-        before:content-[''] before:absolute before:right-[-6px] before:bottom-2 before:border-[10px] before:border-transparent before:border-l-white before:drop-shadow">
-            Chat with us!
-        </div>   
-        <img src="images/logo/bsuchatbot.png" class="w-12 h-12 scale-125 object-contain" />
-    </a>
-    
+      <a href="https://chatgpt.com/g/g-BezUJjM4W-bsu-chatbot" target="_blank" 
+      class="group fixed bottom-6 right-6 bg-white text-red-700 border border-red-700 rounded-full p-3 shadow-lg hover:bg-red-700 hover:text-white transition duration-300 z-50 animate-bounce 
+             hover:scale-110 hover:rotate-3 hover:shadow-xl hover:glow-effect active:scale-95 active:rotate-0">
+   
+     <!-- Message that loops on all devices -->
+     <div id="popup-message" class="absolute right-20 bottom-8 flex items-center whitespace-nowrap bg-white text-red-700 text-sm font-semibold px-4 py-2 rounded-[50px] shadow-md border border-red-300 opacity-100 transition-opacity duration-500
+                 before:content-[''] before:absolute before:right-[-6px] before:bottom-2 before:border-[10px] before:border-transparent before:border-l-white before:drop-shadow">
+       Chat with me!
+     </div>
+   
+     <!-- Chatbot icon -->
+     <img src="images/logo/bsuchatbot.png" alt="Chatbot Icon" class="w-12 h-12 scale-125 object-contain" />
+   </a>
+   
+   <!-- Script to fade in/out repeatedly -->
+   <script>
+     document.addEventListener('DOMContentLoaded', () => {
+       const popup = document.getElementById('popup-message');
+       if (!popup) return;
+   
+       let visible = true;
+       setInterval(() => {
+         popup.classList.toggle('opacity-0');
+         popup.classList.toggle('opacity-100');
+       }, 3000); 
+     });
+   </script>
+
+
+   <style>
+     .group:hover {
+       box-shadow: 0 0 15px 5px rgba(255, 99, 71, 0.7);
+       filter: brightness(1.2);
+     }
+   </style>   
+   
+   
     </section>
 
     <!-- Department Carousel -->
